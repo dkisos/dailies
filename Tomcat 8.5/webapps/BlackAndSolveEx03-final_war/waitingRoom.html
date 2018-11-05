@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/alerts.css">
+    <link rel="stylesheet" type="text/css" href="css/users.css">
+    <link rel="stylesheet" type="text/css" href="css/board.css">
+    <link rel="stylesheet" type="text/css" href="css/waitingRoom.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <script type="text/javascript" src="script/jquery-3.1.1.min.js"></script>
+    <script src="script/jquery.ajaxfileupload.js"></script>
+    <script type="text/javascript" src="script/utils.js"></script>
+    <script type="text/javascript" src="script/waitingRoom.js"></script>
+
+    <title>Waiting Room</title>
+</head>
+<body style="margin: 12px;;padding:0">
+
+<div id="alertDiv">
+</div>
+
+<div id="user-details" class="user-details">
+</div>
+
+<div class="row">
+    <div class="col-xs-2">
+        <!--<button class="btn btn-default" href="/logout">Log Out</button>-->
+        <form method="GET" action="/BlackAndSolveEx03-final_war/userslist">
+            <input type="hidden" name="requestType" value="logout"/>
+            <input type="submit" class="btn btn-default" value="Log Out"/>
+        </form>
+    </div>
+
+    <div class="fileUploadArea col-xs-4">
+        <h4>Upload Game:</h4>
+        <form>
+            <input id="uploadGame" class="inputfile" type="file" name="file"/><br/>
+        </form>
+    </div>
+
+    <div class="col-xs-2">
+        <form name="form-enterGame" id="form-enterGame" method="GET" action="/BlackAndSolveEx03-final_war/enterGame">
+            <input id="sendedSelectedGameTitle" type="hidden" name="selectedGameTitle" value=""/>
+            <input type="submit" id="enterGameButton" class="btn btn-default" value="Enter Game"/>
+        </form>
+
+        <!-- <div>
+             <button onclick="drawFakeBoard()">draw fake board</button>
+             <label for="rows">rows</label><input id="rows" type="text"/>
+             <label for="cols">cols</label><input id="cols" type="text"/>
+         </div>-->
+
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-2">
+            <div class="sidebar">
+                <h4>Online <span id="usersBadge" class="badge">0</span></h4>
+                <div class="clearfix">
+                    <div class="input">
+                        <ul id="userslist">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="sidebar">
+                <h4>Games <span id="gamesBadge" class="badge">0</span></h4>
+                <div class="clearfix">
+                    <div class="input">
+                        <table id="gamesTable" class="table table-striped table-hover">
+                            <thead>
+                            <tr id="gameTableHead">
+                                <th>#</th>
+                                <th>Title</th>
+                                <th>Uploaded By</th>
+                                <th>Players</th>
+                                <th>Moves</th>
+                                <th>Size</th>
+                            </tr>
+                            </thead>
+                            <tbody id="gamesList">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="sidebar">
+                <h4>Preview</h4>
+                <div class="clearfix">
+                    <table id="gamePreview" class="table">
+                    </table>
+
+                    <div class="div-scrollable">
+                        <table id="boardTable" class=" borderless tab-content">
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <table id="colSlices">
+
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table id="rowSlices">
+                                    </table>
+                                </td>
+                                <td>
+                                    <table id="board">
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

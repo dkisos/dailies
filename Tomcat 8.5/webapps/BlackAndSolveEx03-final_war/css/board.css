@@ -1,0 +1,60 @@
+#rowSlices{
+    white-space: nowrap;
+}
+.board-button{
+    transition: background-color 0.5s ease;
+    height: 20px;
+    width: 20px;
+   /* background-color: #ec971f;*/
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+.unSelected{
+    /*background-color: #ec971f;*/
+    border: none;
+
+}
+.selected{
+    /*background-color: #4D7A97;*/
+    border: 2px solid black;
+}
+.rowSlicesLabels{
+    background-color: #b2d7a1;
+    float: right;
+    height: 20px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+.colSlicesLabels{
+    background-color: #b2d7a1;
+    text-align: center;
+    width: 20px;
+    margin-right: 4px;
+}
+#boardTable{
+    width:1%;
+    height: 1%;
+    white-space:nowrap;
+    border-color: black;
+}
+
+#gameRoomBoard{
+    width:1%;
+    height: 1%;
+    white-space:nowrap;
+}
+
+.BlackSquareType{
+
+    background-color: black;
+}
+
+.WhiteSquareType{
+
+    background-color: whitesmoke;
+}
+
+.UndefinedSquareType{
+
+    background-color: #ec971f;
+}

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - heroku_59a97387cdeff44@us-cdbr-iron-east-05.cleardb.net">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="heroku_59a97387cdeff44">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <table id="3" parent="1" name="apply"/>
+    <table id="4" parent="1" name="businesse_feedbacks"/>
+    <table id="5" parent="1" name="businesses"/>
+    <table id="6" parent="1" name="friends"/>
+    <table id="7" parent="1" name="job_offers"/>
+    <table id="8" parent="1" name="jobtitles"/>
+    <table id="9" parent="1" name="notifications"/>
+    <table id="10" parent="1" name="userdata"/>
+    <table id="11" parent="1" name="userrecommendations"/>
+    <column id="12" parent="3" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="13" parent="3" name="applicant_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="14" parent="3" name="job_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="15" parent="3" name="app_date">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="16" parent="3" name="app_time">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="17" parent="3" name="is_hired">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="18" parent="3" name="business_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="19" parent="3" name="isPending">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="20" parent="3" name="is_finished">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="21" parent="3" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="22" parent="4" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="23" parent="4" name="business_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="24" parent="4" name="feedback">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="25" parent="4" name="uploader_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="26" parent="4" name="upload_date">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="27" parent="4" name="upload_time">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="28" parent="4" name="title">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="29" parent="4" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="30" parent="5" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="31" parent="5" name="name">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="32" parent="5" name="city">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="33" parent="5" name="street">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="34" parent="5" name="phone">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="35" parent="5" name="owner_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="36" parent="5" name="aout">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="37" parent="5" name="number">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="38" parent="5" name="email">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="39" parent="5" name="profilePic">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="40" parent="5" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="41" parent="6" name="firstUserId">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="42" parent="6" name="secondUserId">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="43" parent="7" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="44" parent="7" name="business_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="45" parent="7" name="details">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="46" parent="7" name="start_date">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="47" parent="7" name="end_date">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="48" parent="7" name="location">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="49" parent="7" name="start_time">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="50" parent="7" name="end_time">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="51" parent="7" name="requirements">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="52" parent="7" name="name">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="53" parent="7" name="post_date">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="54" parent="7" name="post_time">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="55" parent="7" name="salary">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="56" parent="7" name="workers_num">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="57" parent="7" name="max_workers_num">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="58" parent="7" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="59" parent="8" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="60" parent="8" name="jobTitle">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="61" parent="8" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="62" parent="9" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="63" parent="9" name="type">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="64" parent="9" name="business_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="65" parent="9" name="is_read">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="66" parent="9" name="is_approved">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="67" parent="9" name="job_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="68" parent="9" name="apply_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="69" parent="9" name="is_pending">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="70" parent="9" name="reciver_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="71" parent="9" name="sender_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="72" parent="9" name="not_date">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="73" parent="9" name="not_time">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="74" parent="9" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="75" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="76" parent="10" name="fname">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="77" parent="10" name="lname">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="78" parent="10" name="email">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="79" parent="10" name="password">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="80" parent="10" name="address">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="81" parent="10" name="skills">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="82" parent="10" name="about">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="83" parent="10" name="CV">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="84" parent="10" name="profilePic">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="85" parent="10" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="86" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="87" parent="11" name="userId">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="88" parent="11" name="recommendation">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="89" parent="11" name="userInputedName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="90" parent="11" name="userInputedId">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="91" parent="11" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

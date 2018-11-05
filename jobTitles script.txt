@@ -1,0 +1,56 @@
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (2, 'web design' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (3, 'web promote')
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (4, 'babysitter' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (5, 'sales' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (6, 'agriculture' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (7, 'agriculture' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (8, 'lifeguard' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (9, 'deliveries' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (10, 'bartender' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (11, 'cook' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (12, 'dishwasher' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (13, 'construction' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (14, 'security' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (15, 'secretary' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (16, 'marketing' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (17, 'care giver' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (18, 'nani' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (19, 'driver' )
+
+INSERT INTO jobTitles (ID,jobTitle)
+VALUES (20, 'mailman' )

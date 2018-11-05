@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Sqlite (Xerial) - users.db">
+  <database-model serializer="dbm" rdbms="SQLITE" format-version="2.6">
+    <schema id="1">
+      <visible>1</visible>
+    </schema>
+    <table id="2" parent="1" name="apply"/>
+    <table id="3" parent="1" name="business_feedbacks"/>
+    <table id="4" parent="1" name="businesses"/>
+    <table id="5" parent="1" name="job_offers"/>
+    <table id="6" parent="1" name="jobTitles"/>
+    <table id="7" parent="1" name="notifications"/>
+    <table id="8" parent="1" name="sqlite_sequence"/>
+    <table id="9" parent="1" name="UserData"/>
+    <table id="10" parent="1" name="UserRecommendations"/>
+    <column id="11" parent="2" name="id">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="12" parent="2" name="applicant_id">
+      <mandatory>1</mandatory>
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="13" parent="2" name="job_id">
+      <mandatory>1</mandatory>
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="14" parent="2" name="app_date">
+      <data-type>DATE(0,-1)|12</data-type>
+    </column>
+    <column id="15" parent="2" name="app_time">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="16" parent="2" name="is_hired">
+      <mandatory>1</mandatory>
+      <data-type>INTEGER(0,-1)|4</data-type>
+      <default-expression>0</default-expression>
+    </column>
+    <column id="17" parent="2" name="business_id">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="18" parent="2" name="isPending">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="19" parent="2" name="is_finished">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <key id="20" parent="2">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="21" parent="3" name="business_id">
+      <mandatory>1</mandatory>
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="22" parent="3" name="feedback">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="23" parent="3" name="uploader_id">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="24" parent="3" name="upload_date">
+      <data-type>DATE(0,-1)|12</data-type>
+    </column>
+    <column id="25" parent="3" name="upload_time">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="26" parent="3" name="title">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="27" parent="3" name="id">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <key id="28" parent="3">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="29" parent="3" name="#FAKE_business_feedbacks_1">
+      <name-surrogate>1</name-surrogate>
+      <columns>business_id</columns>
+      <deferrable>1</deferrable>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>businesses(business_id)</ref-key>
+      <cascade-update-rule>no_action</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="30" parent="3" name="#FAKE_business_feedbacks_2">
+      <name-surrogate>1</name-surrogate>
+      <columns>id</columns>
+      <deferrable>1</deferrable>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.UserData.#1</ref-key>
+      <cascade-update-rule>no_action</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="31" parent="4" name="name">
+      <mandatory>1</mandatory>
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="32" parent="4" name="city">
+      <mandatory>1</mandatory>
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="33" parent="4" name="street">
+      <mandatory>1</mandatory>
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="34" parent="4" name="phone">
+      <mandatory>1</mandatory>
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="35" parent="4" name="owner_id">
+      <mandatory>1</mandatory>
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="36" parent="4" name="aout">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="37" parent="4" name="number">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="38" parent="4" name="email">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="39" parent="4" name="id">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="40" parent="4" name="profilePic">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <key id="41" parent="4">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="42" parent="5" name="business_id">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="43" parent="5" name="details">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="44" parent="5" name="start_date">
+      <data-type>DATE(0,-1)|12</data-type>
+    </column>
+    <column id="45" parent="5" name="end_date">
+      <data-type>DATE(0,-1)|12</data-type>
+    </column>
+    <column id="46" parent="5" name="location">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="47" parent="5" name="start_time">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="48" parent="5" name="end_time">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="49" parent="5" name="requirements">
+      <data-type>TEXT(0,-1)|12</data-type>
+      <default-expression>&apos;&quot;to fix&quot;&apos;</default-expression>
+    </column>
+    <column id="50" parent="5" name="name">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="51" parent="5" name="post_date">
+      <data-type>DATE(0,-1)|12</data-type>
+    </column>
+    <column id="52" parent="5" name="post_time">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="53" parent="5" name="id">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <key id="54" parent="5">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="55" parent="5" name="#FAKE_job_offers_1">
+      <name-surrogate>1</name-surrogate>
+      <columns>business_id</columns>
+      <deferrable>1</deferrable>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.businesses.#1</ref-key>
+      <cascade-update-rule>no_action</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="56" parent="6" name="id">
+      <mandatory>1</mandatory>
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="57" parent="6" name="jobTitle">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <key id="58" parent="6">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="59" parent="7" name="id">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="60" parent="7" name="type">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="61" parent="7" name="business_id">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="62" parent="7" name="is_read">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="63" parent="7" name="is_approved">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="64" parent="7" name="job_id">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="65" parent="7" name="apply_id">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="66" parent="7" name="is_pending">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="67" parent="7" name="reciver_id">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="68" parent="7" name="sender_id">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <key id="69" parent="7">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="70" parent="8" name="name">
+      <data-type>(0,-1)|12</data-type>
+    </column>
+    <column id="71" parent="8" name="seq">
+      <data-type>(0,-1)|12</data-type>
+    </column>
+    <column id="72" parent="9" name="id">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="73" parent="9" name="fname">
+      <mandatory>1</mandatory>
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="74" parent="9" name="lname">
+      <mandatory>1</mandatory>
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="75" parent="9" name="email">
+      <mandatory>1</mandatory>
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="76" parent="9" name="password">
+      <mandatory>1</mandatory>
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="77" parent="9" name="address">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="78" parent="9" name="skills">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="79" parent="9" name="about">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="80" parent="9" name="CV">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="81" parent="9" name="profilePic">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <key id="82" parent="9">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="83" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="84" parent="10" name="userId">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="85" parent="10" name="recommendation">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="86" parent="10" name="userInputedName">
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="87" parent="10" name="userInputedId">
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <key id="88" parent="10">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

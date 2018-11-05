@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asynchronous file Upload in Java Web Application</title>
+    <script src="script/jquery-3.1.1.min.js"></script>
+    <script src="script/jquery.ajaxfileupload.js"></script>
+    <script src="script/utils.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/alerts.css"/>
+    <script lang="Javascript">
+
+        $(function () {
+            $('input[type="file"]').ajaxfileupload({
+                'action': 'testServlet',
+                'onComplete': function (data) {
+                    /*$('#upload').hide();
+                     $('#message').show();*/
+                    console.log("onComplete:"+data);
+
+                    $.each(data || [], function (index, game) {
+                        console.log(game.fileName);
+                        showAlert(game.fileName + " : " + game.msg, game.msgStatus);
+                    });
+                },
+                'onStart': function () {
+                    /* $('#upload').show();
+                     $('#message').hide();*/
+                    console.log("onStart");
+                }
+            });
+        });
+    </script>
+    <style type="text/css">
+        .centered {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="alertDiv">
+</div>
+<button onclick="showAlert2('dfgdfgfdg','infoColor','fadeInDown')">fade in down</button>
+<form>
+    <div class="centered">
+        <h4>AJAX Style File upload in Java Web Application</h4>
+        <input type="file" name="file"/><br/>
+        <div id="upload" style="display: none;">Uploading..</div>
+        <div id="message"></div>
+    </div>
+</form>
+</body>
+</html>

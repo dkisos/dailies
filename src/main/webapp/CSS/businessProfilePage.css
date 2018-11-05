@@ -1,0 +1,37 @@
+
+
+#businessInfoPanelHeader {
+    padding: 10px 20px;
+}
+#businessInfoPanelHeaderTextDiv{
+    margin-left: 10px;
+}
+
+#businessInfoPanelBody {
+    min-height: 200px;
+}
+
+/*img {
+    width: 304px !important;
+    height: auto !important;
+}*/
+.big_profile_pic{
+    width: 304px;
+    height: auto;
+}
+
+.small_profile_pic{
+    height: 35px;
+    width: auto;
+}
+/*
+.panel-body{
+    overflow-y: scroll;
+    max-height: 430px;
+}*/
+/*
+h2 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center;}*/
+input[type=button],input[type=submit]{
+    height: 25px;
+    margin-bottom: 2px;
+}

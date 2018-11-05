@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap-chosen.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="CSS/style.css"/>-->
+    <link rel="stylesheet" type="text/css" href="CSS/search.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="Scripts/jquery-3.1.1.js"></script>
+    <script src="Scripts/chosen.jquery.js"></script>
+    <script>
+        $(function () {
+            $('.chosen-select').chosen();
+            $('.chosen-select-deselect').chosen({allow_single_deselect: true});
+        });
+    </script>
+    <script src="Scripts/utils.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<form method="POST" id="searchForm" class="search" action="/login" name="LoginServlet">
+    <div class="row">
+        <div class="col-lg-4">
+            <h5 class="title">Multiple Select</h5>
+
+
+            <select data-placeholder="Click To Select Your Skills" multiple class="chosen-select chosen-ltr"
+                    tabindex="8">
+                <option value=""></option>
+                <option>American Black Bear</option>
+                <option>Asiatic Black Bear</option>
+                <option>Brown Bear</option>
+                <option>Giant Panda</option>
+                <option>Sloth Bear</option>
+                <option disabled>Sun Bear</option>
+                <option selected>Polar Bear</option>
+                <option disabled>Spectacled Bear</option>
+            </select>
+        </div>
+    </div>
+</form>
+</body>
+</html>

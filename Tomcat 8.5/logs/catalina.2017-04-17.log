@@ -1,0 +1,7 @@
+17-Apr-2017 17:39:50.377 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+17-Apr-2017 17:42:25.792 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+17-Apr-2017 17:44:15.960 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+17-Apr-2017 17:45:32.858 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+17-Apr-2017 17:49:52.363 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+17-Apr-2017 17:52:21.074 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+17-Apr-2017 17:54:13.065 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received

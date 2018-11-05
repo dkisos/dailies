@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/gameRoom.css"/>
+    <link rel="stylesheet" type="text/css" href="css/alerts.css"/>
+    <link rel="stylesheet" type="text/css" href="css/users.css"/>
+    <link rel="stylesheet" type="text/css" href="css/board.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <script type="text/javascript" src="script/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="script/utils.js"></script>
+    <script type="text/javascript" src="script/gameRoom.js"></script>
+    <script type="text/javascript" src="script/gameRoomActions.js"></script>
+    <title>Title</title>
+</head>
+<body style="margin: 12px;;padding:0">
+
+<div id="alertDiv">
+</div>
+
+<div id="user-details" class="user-details row">
+
+</div>
+
+
+<div id="mainGameDiv" class="container-fluid">
+    <div class="row">
+        <div class="col-xs-3">
+            <div class="sidebar">
+                <h4>Players <span id="usersBadge" class="badge">0</span></h4>
+                <div class="clearfix">
+
+                    <div class="col-xs-2">
+                        <form method="GET" action="/BlackAndSolveEx03-final_war/gameRoom">
+                            <input type="hidden" name="requestType" value="leaveGame"/>
+                            <input type="submit" class="btn btn-default" value="Leave Game"/>
+                        </form>
+                    </div>
+
+                    <div class="input">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Moves</th>
+                                <th>Score</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody id="playersList">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-9">
+            <div class="sidebar">
+                <h4>Game</h4>
+                <div id="playZone" class="clearfix">
+                    <div id="turnZone" class="col-xs-5">
+                        <div>
+                            <button id="playTurnBtn" class="playElem btn btn-default" onclick="playTurn()"
+                                    value="Play Turn">Play Turn <span id="playTurnBadge" class="badge">#1</span>
+                            </button><!--------------button------------------->
+                            <br>
+                            <label>Square Status: </label>
+
+                            <label class="playElem radio-inline">
+                                <input type="radio" name="squareStatusType" id="BlackSquareType" class="playElem"
+                                       value="Black"
+                                       checked="checked"> Black
+                            </label>
+                            <label class="playElem radio-inline">
+                                <input type="radio" name="squareStatusType" id="WhiteSquareType" class="playElem"
+                                       value="White"> White
+                            </label>
+                            <label class="playElem radio-inline">
+                                <input type="radio" name="squareStatusType" id="UndefinedSquareType" class="playElem"
+                                       value="Undefined">
+                                Undefined
+                            </label>
+                            <br>
+                            <input type="text" id="commentInput" class="playElem form-control"
+                                   placeholder="Whats on your mind ;-)">
+
+                        </div>
+                    </div>
+                    <div class="col-xs-5">
+                        <button id="finishTurnBtn" class="playElem btn btn-default" onclick="finishTurn()">Finish Turn
+                        </button>
+                        <!--------------button------------------->
+                        <button id="undoBtn" class="playElem btn btn-default" onclick="undo()">Undo</button>
+                        <!--------------button------------------->
+
+
+                        <button id="drawFakeBoard" class="btn btn-default" onclick="drawFakeBoard()">Draw Board</button>
+
+                        <script>function selectAll() {
+                            $(".board-button").addClass("selected");
+                        }</script>
+                        <button id="selectAll" class="btn btn-default" onclick="selectAll()">Select All</button>
+                        <!--------------button------------------->
+                        <br><br>
+                    </div>
+
+
+                    <table class="table">
+                        <thead id="gameDetails">
+                        </thead>
+                    </table>
+
+                    <div class="div-scrollable">
+
+                        <table id="boardTable" class=" borderless tab-content">
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <table id="colSlices">
+
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table id="rowSlices">
+                                    </table>
+                                </td>
+                                <td>
+                                    <table id="board">
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup">
+
+    <span class="popuptext animate" id="myPopup">
+        <!--<span class="closebtn" onclick="closeAlert(this)">&times;</span>-->
+        <h1>Game Over</h1>
+        <div id="winnersList" class="col-xs-6 winLoseLists"><h1>Winners:</h1></div>
+        <div id="losersList" class="col-xs-6 winLoseLists"><h1>Losers:</h1></div>
+            <form method="GET" action="/BlackAndSolveEx03-final_war/gameRoom">
+                <input type="hidden" name="requestType" value="backToWaitingRoom"/>
+                <input type="submit" class="btn btn-default" value="Back To Waiting Room"/>
+            </form>
+    </span>
+</div>
+</body>
+</html>

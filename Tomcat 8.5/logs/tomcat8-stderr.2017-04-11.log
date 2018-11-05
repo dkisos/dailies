@@ -1,0 +1,170 @@
+
+2017-04-11 13:44:22 Commons Daemon procrun stderr initialized
+11-Apr-2017 13:44:49.535 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.5
+11-Apr-2017 13:44:49.535 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 31 2016 19:51:16 UTC
+11-Apr-2017 13:44:49.535 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.5.0
+11-Apr-2017 13:44:49.535 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+11-Apr-2017 13:44:49.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+11-Apr-2017 13:44:49.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+11-Apr-2017 13:44:49.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_91
+11-Apr-2017 13:44:49.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_91-b15
+11-Apr-2017 13:44:49.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Apr-2017 13:44:49.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Program Files\Apache Software Foundation\Tomcat 8.5
+11-Apr-2017 13:44:49.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Apache Software Foundation\Tomcat 8.5
+11-Apr-2017 13:44:49.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Apache Software Foundation\Tomcat 8.5
+11-Apr-2017 13:44:49.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Program Files\Apache Software Foundation\Tomcat 8.5
+11-Apr-2017 13:44:49.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Program Files\Apache Software Foundation\Tomcat 8.5\temp
+11-Apr-2017 13:44:49.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2017 13:44:49.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Program Files\Apache Software Foundation\Tomcat 8.5\conf\logging.properties
+11-Apr-2017 13:44:49.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: exit
+11-Apr-2017 13:44:49.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xms128m
+11-Apr-2017 13:44:49.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx256m
+11-Apr-2017 13:44:49.566 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Apache Software Foundation\Tomcat 8.5\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;"C:\Users\OferMe\Desktop\Sadna\frame works\apache-maven-3.3.9\bin";C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;.
+11-Apr-2017 13:45:03.269 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Apr-2017 13:45:09.800 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Apr-2017 13:45:09.800 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+11-Apr-2017 13:45:09.800 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Apr-2017 13:45:09.800 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 40655 ms
+11-Apr-2017 13:45:12.286 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+11-Apr-2017 13:45:12.286 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.5
+11-Apr-2017 13:45:13.786 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\BlackAndSolveEx03-final_war.war
+11-Apr-2017 13:45:58.630 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+11-Apr-2017 13:46:04.302 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [3,640] milliseconds.
+11-Apr-2017 13:46:05.958 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\BlackAndSolveEx03-final_war.war has finished in 52,172 ms
+11-Apr-2017 13:46:05.958 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\docs
+11-Apr-2017 13:46:06.630 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\docs has finished in 672 ms
+11-Apr-2017 13:46:06.630 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\host-manager
+11-Apr-2017 13:46:07.520 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\host-manager has finished in 890 ms
+11-Apr-2017 13:46:07.520 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\manager
+11-Apr-2017 13:46:08.614 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\manager has finished in 1,094 ms
+11-Apr-2017 13:46:08.614 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\ROOT
+11-Apr-2017 13:46:08.661 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\ROOT has finished in 47 ms
+11-Apr-2017 13:46:08.895 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+11-Apr-2017 13:46:08.911 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+11-Apr-2017 13:46:08.911 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 59115 ms
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+2017-04-11 15:53:08 Commons Daemon procrun stderr initialized
+11-Apr-2017 15:53:53.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.5
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 31 2016 19:51:16 UTC
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.5.0
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_91
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_91-b15
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Program Files\Apache Software Foundation\Tomcat 8.5
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Apache Software Foundation\Tomcat 8.5
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Apache Software Foundation\Tomcat 8.5
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Program Files\Apache Software Foundation\Tomcat 8.5
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Program Files\Apache Software Foundation\Tomcat 8.5\temp
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Program Files\Apache Software Foundation\Tomcat 8.5\conf\logging.properties
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: exit
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xms128m
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx256m
+11-Apr-2017 15:53:53.086 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Apache Software Foundation\Tomcat 8.5\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;"C:\Users\OferMe\Desktop\Sadna\frame works\apache-maven-3.3.9\bin";C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;.
+11-Apr-2017 15:54:16.867 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Apr-2017 15:54:27.195 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Apr-2017 15:54:27.211 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+11-Apr-2017 15:54:27.227 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Apr-2017 15:54:27.227 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 70619 ms
+11-Apr-2017 15:54:30.164 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+11-Apr-2017 15:54:30.164 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.5
+11-Apr-2017 15:54:31.664 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\BlackAndSolveEx03-final_war.war
+11-Apr-2017 15:54:52.713 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+11-Apr-2017 15:54:55.213 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,844] milliseconds.
+11-Apr-2017 15:54:56.103 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\BlackAndSolveEx03-final_war.war has finished in 24,424 ms
+11-Apr-2017 15:54:56.103 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\docs
+11-Apr-2017 15:54:56.369 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\docs has finished in 266 ms
+11-Apr-2017 15:54:56.369 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\host-manager
+11-Apr-2017 15:54:56.853 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\host-manager has finished in 484 ms
+11-Apr-2017 15:54:56.853 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\manager
+11-Apr-2017 15:54:57.275 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\manager has finished in 422 ms
+11-Apr-2017 15:54:57.275 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\ROOT
+11-Apr-2017 15:54:57.307 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\ROOT has finished in 32 ms
+11-Apr-2017 15:54:57.322 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+11-Apr-2017 15:54:57.322 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+11-Apr-2017 15:54:57.322 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 30106 ms
+11-Apr-2017 19:43:03.470 INFO [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+11-Apr-2017 19:43:03.720 INFO [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+11-Apr-2017 19:43:03.783 INFO [Thread-6] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+11-Apr-2017 19:43:04.017 INFO [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+11-Apr-2017 19:43:04.017 INFO [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+
+2017-04-11 19:45:03 Commons Daemon procrun stderr initialized
+11-Apr-2017 19:45:12.304 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.5
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 31 2016 19:51:16 UTC
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.5.0
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_91
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_91-b15
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Program Files\Apache Software Foundation\Tomcat 8.5
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Apache Software Foundation\Tomcat 8.5
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Apache Software Foundation\Tomcat 8.5
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Program Files\Apache Software Foundation\Tomcat 8.5
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Program Files\Apache Software Foundation\Tomcat 8.5\temp
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Program Files\Apache Software Foundation\Tomcat 8.5\conf\logging.properties
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: exit
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xms128m
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx256m
+11-Apr-2017 19:45:12.320 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Apache Software Foundation\Tomcat 8.5\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;"C:\Users\OferMe\Desktop\Sadna\frame works\apache-maven-3.3.9\bin";C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;.
+11-Apr-2017 19:45:22.023 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Apr-2017 19:45:24.820 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Apr-2017 19:45:24.820 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+11-Apr-2017 19:45:24.835 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Apr-2017 19:45:24.835 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 19596 ms
+11-Apr-2017 19:45:26.072 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+11-Apr-2017 19:45:26.072 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.5
+11-Apr-2017 19:45:27.291 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\BlackAndSolveEx03-final_war.war
+11-Apr-2017 19:45:46.604 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+11-Apr-2017 19:45:48.291 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,203] milliseconds.
+11-Apr-2017 19:45:48.775 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\BlackAndSolveEx03-final_war.war has finished in 21,484 ms
+11-Apr-2017 19:45:48.775 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\docs
+11-Apr-2017 19:45:49.197 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\docs has finished in 422 ms
+11-Apr-2017 19:45:49.197 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\host-manager
+11-Apr-2017 19:45:49.385 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\host-manager has finished in 188 ms
+11-Apr-2017 19:45:49.385 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\manager
+11-Apr-2017 19:45:49.494 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\manager has finished in 109 ms
+11-Apr-2017 19:45:49.494 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\ROOT
+11-Apr-2017 19:45:49.525 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\ROOT has finished in 16 ms
+11-Apr-2017 19:45:49.525 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+11-Apr-2017 19:45:49.541 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+11-Apr-2017 19:45:49.541 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 24706 ms
+12-Apr-2017 18:39:03.556 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:39:25.986 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:39:44.076 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:40:37.345 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:43:18.458 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:44:17.544 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:45:59.646 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:49:08.769 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:49:37.238 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:50:27.830 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:51:03.565 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:52:23.865 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:52:58.430 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:55:13.625 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:55:43.535 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:56:21.194 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 18:58:08.558 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 19:06:22.939 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 19:07:34.691 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 19:08:35.357 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 19:11:09.413 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 19:11:48.920 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 19:28:16.273 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 19:33:02.672 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 19:34:37.804 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 19:41:56.781 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 19:42:37.066 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+12-Apr-2017 19:43:49.551 WARNING [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+13-Apr-2017 22:14:16.070 INFO [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+13-Apr-2017 22:14:16.273 INFO [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+13-Apr-2017 22:14:16.336 INFO [Thread-6] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+13-Apr-2017 22:14:16.476 INFO [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+13-Apr-2017 22:14:16.523 INFO [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]

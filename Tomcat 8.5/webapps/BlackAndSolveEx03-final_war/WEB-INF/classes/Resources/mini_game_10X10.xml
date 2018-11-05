@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by mazuki (darksiderg) -->
+<GameDescriptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Gridler.xsd">
+	<GameType>SinglePlayer</GameType>
+	<Board>
+		<Definition>
+			<Rows>10</Rows>
+			<Columns>10</Columns>
+			<Slices>
+				<Slice orientation="column" id="3">
+					<Blocks>1,8</Blocks>
+				</Slice>
+				<Slice orientation="column" id="1">
+					<Blocks>1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="5">
+					<Blocks>1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="2">
+					<Blocks>2</Blocks>
+				</Slice>
+				<Slice orientation="column" id="4">
+					<Blocks>2</Blocks>
+				</Slice>
+				<Slice orientation="column" id="8">
+					<Blocks>8,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="7">
+					<Blocks>2</Blocks>
+				</Slice>
+				<Slice orientation="column" id="6">
+					<Blocks>1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="10">
+					<Blocks>1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="9">
+					<Blocks>2</Blocks>
+				</Slice>
+				<Slice orientation="row" id="9">
+					<Blocks>1,1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="6">
+					<Blocks>1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="7">
+					<Blocks>1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="10">
+					<Blocks>1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="8">
+					<Blocks>1,5</Blocks>
+				</Slice>
+				<Slice orientation="row" id="5">
+					<Blocks>1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="1">
+					<Blocks>1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="2">
+					<Blocks>1,1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="4">
+					<Blocks>1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="3">
+					<Blocks>5,1</Blocks>
+				</Slice>
+			</Slices>
+		</Definition>
+		<Solution>
+			<Square row="1" column="3"/>
+			<Square row="1" column="8"/>
+			<Square row="2" column="2"/>
+			<Square row="2" column="4"/>
+			<Square row="2" column="8"/>
+			<Square row="3" column="1"/>
+			<Square row="3" column="2"/>
+			<Square row="3" column="3"/>
+			<Square row="3" column="4"/>
+			<Square row="3" column="5"/>
+			<Square row="3" column="8"/>
+			<Square row="4" column="3"/>
+			<Square row="4" column="8"/>
+			<Square row="5" column="3"/>
+			<Square row="5" column="8"/>
+			<Square row="6" column="3"/>
+			<Square row="6" column="8"/>
+			<Square row="7" column="3"/>
+			<Square row="7" column="8"/>
+			<Square row="8" column="3"/>
+			<Square row="8" column="6"/>
+			<Square row="8" column="7"/>
+			<Square row="8" column="8"/>
+			<Square row="8" column="9"/>
+			<Square row="8" column="10"/>
+			<Square row="9" column="3"/>
+			<Square row="9" column="7"/>
+			<Square row="9" column="9"/>
+			<Square row="10" column="3"/>
+			<Square row="10" column="8"/>
+		</Solution>
+	</Board>
+	<!--<MultiPlayers moves="3">
+		<Players>
+			<player id="1">
+				<Name>Moshe</Name>
+				<PlayerType>Computer</PlayerType>
+			</player>
+			<player id="2">
+				<Name>Avraham</Name>
+				<PlayerType>Human</PlayerType>
+			</player>
+			<player id="3">
+				<Name>Haim</Name>
+				<PlayerType>Human</PlayerType>
+			</player>
+		</Players>
+	</MultiPlayers>
+	<DynamicMultiPlayers gametitle="simple game" totalmoves="15" totalPlayers="2"/>-->
+</GameDescriptor>

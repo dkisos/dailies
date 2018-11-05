@@ -1,0 +1,8 @@
+.fileUploadArea{
+    border:1px solid #ccc;
+    border-radius: 6px;
+    background-color:#fff;
+}
+.fullBoardImg{
+    content: url("../images/fullGame.jpg");
+}

@@ -1,0 +1,26 @@
+.humanPlayer{
+    content: url("../images/human.png");
+}
+
+.robotPlayer{
+    content: url("../images/robot.png");
+}
+
+.user-details {
+    margin: 12px auto 12px auto;
+    text-align: center;
+   /* margin-right: auto;
+    margin-left: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;*/
+    width: 100%;
+    border: 3px solid green;
+    padding: 5px;
+}
+.UserDetailsTurnImg {
+
+}
+.UserDetailsTurnImgAminate{
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}

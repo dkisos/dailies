@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: hidden">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile Page</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/editProfileStyle.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+
+    <script type="text/javascript" src="Scripts/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="Scripts/editProfilePage.js"></script>
+    <script src="Scripts/utils.js"></script>
+    <script src="Scripts/currentUser.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/notifier.js"></script>
+
+
+</head>
+<body>
+<!--Ofer :04-Sep-17-->
+<div class="profilePage row" style="width: 101%;">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header navbar-default"><a class="navbar-brand" href="#">Dailies</a></div>
+            <ul class="nav navbar-nav">
+                <li id="userSearch">
+                    <div style="margin-top: 5px"><input type="" class="navbar-search" style="width:250px"
+                                                        id="searchText" list="searchResults" placeholder="Search">
+                        <datalist id="searchResults"></datalist>
+                    </div>
+                </li>
+                <li style="margin-right: 50px">
+                    <button class="btn btn-default btn-sm" onclick="searchUsers()"
+                            style="margin-left: 10px ;margin-top: 10px">Search
+                    </button>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="workSearch">
+                    <div class="container" style="width: auto;">
+                        <button class="btn btn-default btn-lg btn-link"
+                                onclick="window.location.replace('searchAndFeed.html');" style="font-size:26px;"><i
+                                class="glyphicon glyphicon-search custom"></i></button>
+                    </div>
+                </li>
+                <li id="msgNotifier">
+                    <div class="container" style="width: auto;">
+                        <button class="btn btn-default btn-lg btn-link" onclick="notifierClick()"
+                                style="font-size:26px;"><i class="glyphicon glyphicon-comment custom"></i></button>
+                        <span class="badge badge-notify"></span></div>
+                </li>
+                <li class="dropdown"><a id="userButton" class="dropdown-toggle" aria-expanded="false" href="#"
+                                        data-toggle="dropdown"> <img id="smallProfilePic"
+                                                                     src="http://res.cloudinary.com/ronerez/image/upload/v1502455157/empty_profile_it5elf.png"
+                                                                     class="img-rounded" alt="" width="20" height="20">User
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="profilePage.html">Profile Page</a></li>
+                        <li role="separator" class="divider"></li><li><a onclick="logOut()">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div >
+    <div class="col-md-2">
+
+        <div  align="center" >
+            <label for="profilePicBtn" class="texts ">Profile Picture:</label>
+            <input id='profilePic' style="display: none;" type='file' name="profilePic" onchange="readURL(this);"/>
+
+            <button id="profilePicBtn" class="btn btn-primary" name="profilePicBtn" onclick="profilePic.click()">Choose
+                Picture
+            </button>
+            <img id="profilePicDisplay" src="" class="img-rounded big_profile_pic"
+                 onerror="this.onerror=null;this.src='Resources/empty_profile.jpg';"
+                 style="max-width: 100%; height: auto">
+
+        </div>
+
+            <div class="row">
+               <br><br>
+                <div >
+
+                    <label for="cv" class="texts col-md-5">CV:</label>
+                    <input id="cv" type="file" style="display: none" name="cv" class="texts">
+                    <button id="cvBtn" class="btn btn-primary" name="cvBtn" onclick="cv.click()">Choose
+                        CV
+                    </button>
+                </div>
+
+            </div>
+
+    </div>
+
+    <div class="editProfile col-lg-4 col-md-offset-2">
+        <h2>Edit Profile Page</h2>
+        <div>
+            <input type="hidden" name="request_type" value="updateUserFiles">
+
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="fname" class="texts">First Name:</label>
+                </div>
+                <div class="col-md-7">
+                    <input id="fname" type="text" class="textInput" name="fname" placeholder="First Name" required/>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="lname" class="texts">Last Name:</label>
+                </div>
+                <div class="col-md-7">
+                    <input id="lname" type="text" class="textInput" name="lname" placeholder="Last Name" required/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="email" class="texts">Email:</label>
+                </div>
+                <div class="col-md-7">
+                    <input id="email" type="email" class="textInput" name="email" placeholder="Email" required/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="password" class="texts">Password:</label>
+                </div>
+                <div class="col-md-7">
+                    <input id="password" type="password" class="textInput" name="password" placeholder="Password"
+                           required/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="address" class="texts">Address:</label>
+                </div>
+                <div class="col-md-7">
+                    <input id="address" type="address" class="textInput" name="address" placeholder="address"
+                           required/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="password" class="texts">Skills:</label>
+                </div>
+                <textarea id="skills" class="form-control" rows="2" type="skills" name="skills" placeholder="skills"
+                ></textarea>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="about" class="texts">About:</label>
+                </div>
+                <textarea class="form-control" rows="5" id="about" type="about" name="about" placeholder="about"
+                          value="about"></textarea>
+            </div>
+
+
+            <!--<div class="row">
+                <div class="col-md-5">
+                    <label for="cv" class="texts">CV:</label>
+                    <input id="cv" type="file" style="display: none" name="cv" class="texts"><br>
+                    <button id="cvBtn" class="btn btn-primary" name="cvBtn" onclick="cv.click()">Choose
+                        CV
+                    </button>
+                </div>
+
+            </div>-->
+            <button onclick="registerUpdates()" style="margin-top: 10px" class="btn btn-primary btn-block btn-large">Submit</button>
+            <div id="res"></div>
+
+        </div>
+    </div>
+    <div class="col-md-2" style="float: right;">
+        <div class="panel panel-default long">
+            <div id="friendsPanelHeader" class="panel-heading">
+                <div class="row">
+                    <div id="friendsTextHeader" class="linkForm"><h4>My Friends</h4></div>
+                </div>
+            </div>
+            <div id="friendsPanelBody" class="panel-body"
+                 style="height: 75vh;overflow-y: scroll;"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

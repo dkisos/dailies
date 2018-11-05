@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class=" -ms-">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap-chosen.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/businessProfilePage.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="Scripts/jquery-3.1.1.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/utils.js"></script>
+    <script src="Scripts/notifier.js"></script>
+    <script src="Scripts/currentUser.js"></script>
+    <script src="Scripts/profilePage.js"></script>
+
+</head>
+<body>
+<!--Ofer :04-Sep-17-->
+<div class="profilePage row" style="width: 101%;">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header navbar-default"><a class="navbar-brand" href="#">Dailies</a></div>
+            <ul class="nav navbar-nav">
+                <li id="userSearch">
+                    <div style="margin-top: 5px"><input type="" class="navbar-search" style="width:250px"
+                                                        id="searchText" list="searchResults" placeholder="Search">
+                        <datalist id="searchResults"></datalist>
+                    </div>
+                </li>
+                <li style="margin-right: 50px">
+                    <button class="btn btn-default btn-sm" onclick="searchUsers()"
+                            style="margin-left: 10px ;margin-top: 10px">Search
+                    </button>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="workSearch">
+                    <div class="container" style="width: auto;">
+                        <button class="btn btn-default btn-lg btn-link"
+                                onclick="window.location.replace('searchAndFeed.html');" style="font-size:26px;"><i
+                                class="glyphicon glyphicon-search custom"></i></button>
+                    </div>
+                </li>
+                <li id="msgNotifier">
+                    <div class="container" style="width: auto;">
+                        <button class="btn btn-default btn-lg btn-link" onclick="notifierClick()"
+                                style="font-size:26px;"><i class="glyphicon glyphicon-comment custom"></i></button>
+                        <span class="badge badge-notify"></span></div>
+                </li>
+                <li class="dropdown"><a id="userButton" class="dropdown-toggle" aria-expanded="false" href="#"
+                                        data-toggle="dropdown"> <img id="smallProfilePic"
+                                                                     src="Resources/empty_profile.jpg"
+                                                                     class="img-rounded" alt="" width="20" height="20">User
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="profilePage.html">Profile Page</a></li>
+                        <li role="separator" class="divider"></li><li><a onclick="logOut()">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div>
+    <div class="col-md-2">
+        <div align="center">
+            <img id="profilePic" src="" class="img-rounded big_profile_pic"
+                 onerror="this.onerror=null;this.src='Resources/empty_profile.jpg';"
+                 style="max-width: 100%; height: auto">
+        </div>
+    </div>
+
+
+    <div class="col-md-8">
+        <nav id="profile-nav" class="navbar navbar-default ">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <!--Ofer :05-Sep-17-->
+                    <li class="active"><a href="#" id="aboutBtnn" onclick="aboutClick()">About</a></li>
+                    <li><a href="#" id="recommendationsBtn" onclick="recommendationsClick()">Recommendations</a>
+                    </li>
+                    <li><a href="#" id="jobHistoryBtn" onclick="jobHistoryClick()">Resume</a></li>
+                    <li><a href="#" id="futureJobsBtn" onclick="futureJobsClick()">Future Jobs</a></li>
+                    <li><a href="#" id="showFriendsBtn" onclick="friendsClick()">Friends</a></li>
+                </ul>
+                <ul>
+                    <span style="float:right;" class="dropdown">
+                        <button class="btn btn-default navbar-btn dropdown-toggle pull-right" type="button"
+                                id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            More
+                            <span class="caret"></span>
+                        </button>
+                            <ul id="moreDropDown" class="dropdown-menu dropdown-menu-right"
+                                aria-labelledby="dropdownMenu1">
+                                <li><a href="#" id="businessesBtn" onclick="businessesClick()">Businesses</a></li>
+                                <li><a href="#" id="CVbtnn" onclick="">CV</a></li>
+                                <li id="friendshipBtn"><a href="#" id="addFriendButton" onclick="addAsFriend()">Add As Friend</a></li>
+                                <li id="editProfileBtn"><a href="editProfilePage.html">Edit Profile</a></li>
+                            </ul>
+                    </span>
+                </ul>
+            </div>
+        </nav>
+        <div style="margin-top: 5px">
+            <div class="panel panel-default" >
+                <div id="userInfoPanelHeader" class="panel-heading" >
+                    <div class="row" style="padding-right: 10px;padding-left: 10px;">
+                        <div id="userInfoPanelHeaderTextDiv" class="linkForm">About</div>
+                        <div id="userInfoPanelHeaderButtonDiv" align="right">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div id="userInfoPanelBody" class="panel-body"
+                     style=" height: 67vh; overflow-x: hidden;overflow-y: scroll;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2">
+        <div class="panel panel-default">
+            <div id="friendsPanelHeader" class="panel-heading">
+                <div class="row">
+                    <div id="friendsTextHeader" class="linkForm"><h4>My Friends</h4></div>
+                </div>
+            </div>
+            <div id="friendsPanelBody" class="panel-body"
+                 style="height: 75vh;overflow-y: scroll;"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

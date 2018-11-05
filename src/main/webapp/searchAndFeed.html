@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search and wall</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap-chosen.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/search.css"/>
+
+    <script src="Scripts/jquery-3.1.1.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/chosen.jquery.js"></script>
+    <script src="Scripts/searchAndFeed.js"></script>
+    <script src="Scripts/utils.js"></script>
+    <script src="Scripts/notifier.js"></script>
+    <script src="Scripts/currentUser.js"></script>
+
+</head>
+<body style="width: auto; overflow-y: hidden; overflow-x: hidden;">
+<!--Ofer :04-Sep-17-->
+<div class="profilePage row" style="width: 101%;">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header navbar-default">
+                <a class="navbar-brand" href="#">Dailies</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li id="userSearch">
+                    <div style="margin-top: 5px">
+                        <input type="" class="navbar-search" style="width:250px" id="searchText" list="searchResults"
+                               placeholder="Search">
+                        <datalist id="searchResults"></datalist>
+                    </div>
+                </li>
+                <li style="margin-right: 50px">
+                    <button class="btn btn-default btn-sm" onclick="searchUsers()"
+                            style="margin-left: 10px ;margin-top: 10px">Search
+                    </button>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li id="workSearch">
+                    <div class="container" style="width: auto;">
+                        <button class="btn btn-default btn-lg btn-link"
+                                onclick="window.location.replace('searchAndFeed.html');"
+                                style="font-size:26px;">
+                            <i class="glyphicon glyphicon-search custom"></i>
+                        </button>
+                    </div>
+                </li>
+
+                <li id="msgNotifier">
+                    <div class="container" style="width: auto;">
+                        <button class="btn btn-default btn-lg btn-link" onclick="notifierClick()"
+                                style="font-size:26px;">
+                            <i class="glyphicon glyphicon-comment custom"></i>
+                        </button>
+                        <span class="badge badge-notify"></span>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a id="userButton" class="dropdown-toggle" aria-expanded="false" href="#" data-toggle="dropdown">
+                        <img id="smallProfilePic"
+                             src="Resources/empty_profile.jpg"
+                             class="img-rounded" alt="" width="20" height="20">User
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="profilePage.html">Profile Page</a></li>
+                        <li role="separator" class="divider"></li><li><a onclick="logOut()">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="row">
+    <div class="col-sm-3 col-md-3">
+        <div class="panel panel-default" style="height: 85vh;margin-left: 15px">
+            <div id="filterJobPanelHead" class="panel-heading" style="font-size:20px;"><b>Filter Jobs</b></div>
+            <div id="filterJobPanelBody" class="panel-body">
+                <div class="row ">
+                    <label class="col-sm-12 col-md-12 control-label">By Dates
+                        :</label>
+                </div>
+                <div class="row form-inline">
+                    <label class="col-sm-3 col-md-3" for="startDate">From:</label>
+                    <input class="col-sm-3 col-md-3 form-control" name="startDate" id="startDate" required="" type="date"
+                           style="background-color: white;color: black">
+                </div>
+                <div class="row form-inline">
+                    <label class="col-sm-3 col-md-3" for="endDate">To:</label>
+                    <input class="col-sm-3 col-md-3 form-control" name="endDate" id="endDate" required="" type="date"
+                           style="background-color: white; color: black">
+                </div>
+                <hr class="searchHr">
+
+                <div class="row ">
+                    <label class="col-sm-12 col-md-12 control-label" for="salaryFrom" style="">By Salary: (Per Hour)</label>
+                </div>
+                <div class="row form-inline">
+                    <label class="col-sm-3 col-md-3 " for="salaryFrom">From:</label>
+                    <input class="col-sm-1 col-md-1 form-control" name="salaryFrom" id="salaryFrom" required="" type="number"
+                           min="0"
+                           style="background-color: white; color: black;width: 20% !important;">
+                    <label class="col-sm-2 col-md-2 " for="salaryTo">To:</label>
+                    <input class="col-sm-1 col-md-1 form-control" name="salaryTo" id="salaryTo" required="" type="number" min="0"
+                           style="background-color: white; color: black;width: 20% !important;">
+                </div>
+                <hr class="searchHr">
+                <div class="row">
+                    <div class="row1">
+                        <div>
+                            <label class="col-sm-12 col-md-12 control-label" for="locationSelect">By Location:</label>
+                            <select id="locationSelect" data-placeholder="Click To Select Location" multiple
+                                    class="chosen-select chosen-ltr" style="width: 100%">
+                                <option id="optionL0"></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr class="searchHr">
+                <div class="row">
+                    <div class="row1">
+                        <div>
+                            <label class="col-sm-12 col-md-12 control-label" for="jobsSelect" style="padding-top: 5px">By Type Of
+                                Job:</label>
+                            <select id="jobsSelect" data-placeholder="Click To Select Your Skills" multiple
+                                    class="chosen-select chosen-ltr" style="width: 100%">
+                                <option id="option0"></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr class="searchHr">
+                <button type="button" id="buttonFilter" class="btn btn-default"
+                        style="margin-top:5px; width: auto;float: right">Get
+                    Jobs
+                </button>
+                <button type="button" id="LoadMore" class="btn btn-default"
+                        style="margin-top:5px; width: auto;float: right">Load more
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-7 col-md-7">
+        <div class="row" style="height: 85vh; overflow-y: scroll; overflow-x: hidden;">
+            <div id="insert"></div>
+        </div>
+    </div>
+
+    <div class="col-sm-2 col-md-2">
+        <div class="panel panel-default">
+            <div id="friendsPanelHeader" class="panel-heading">
+                <div class="row">
+                    <div id="friendsTextHeader" class="linkForm"><h4>My Friends</h4></div>
+                </div>
+            </div>
+            <div id="friendsPanelBody" class="panel-body"
+                 style="height: 75vh;overflow-y: scroll;"></div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

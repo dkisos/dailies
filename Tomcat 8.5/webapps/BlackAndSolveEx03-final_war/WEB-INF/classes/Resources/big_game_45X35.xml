@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by mazuki (darksiderg) -->
+<GameDescriptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Gridler.xsd">
+	<GameType>SinglePlayer</GameType>
+	<Board>
+		<Definition>
+			<Rows>45</Rows>
+			<Columns>35</Columns>
+			<Slices>
+				<Slice orientation="row" id="1">
+					<Blocks>4,1,4</Blocks>
+				</Slice>
+				<Slice orientation="row" id="2">
+					<Blocks>2,2,2,3,2,4</Blocks>
+				</Slice>
+				<Slice orientation="row" id="3">
+					<Blocks>2,2,4,4,1,2,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="4">
+					<Blocks>7,6,2</Blocks>
+				</Slice>
+				<Slice orientation="row" id="5">
+					<Blocks>8,1,2,4,4,2</Blocks>
+				</Slice>
+				<Slice orientation="row" id="6">
+					<Blocks>7,1,1,2,2,2,2,2</Blocks>
+				</Slice>
+				<Slice orientation="row" id="7">
+					<Blocks>5,1,1,4,4,2,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="8">
+					<Blocks>4,1,1,1,3,3,1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="9">
+					<Blocks>3,1,4,3,2,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="10">
+					<Blocks>1,3,3,1,1,2,5,2</Blocks>
+				</Slice>
+				<Slice orientation="row" id="11">
+					<Blocks>2,3,3,1,1,1,3,1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="12">
+					<Blocks>3,2,5,1,1,2,2</Blocks>
+				</Slice>
+				<Slice orientation="row" id="13">
+					<Blocks>2,8,1,7,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="14">
+					<Blocks>1,8,1,7,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="15">
+					<Blocks>1,1,1,8,1,3,3,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="16">
+					<Blocks>1,1,2,1,7,1,2,4,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="17">
+					<Blocks>1,1,7,6,1,2,3</Blocks>
+				</Slice>
+				<Slice orientation="row" id="18">
+					<Blocks>1,4,2,1,6,1,2,2</Blocks>
+				</Slice>
+				<Slice orientation="row" id="19">
+					<Blocks>2,2,1,5,1,3</Blocks>
+				</Slice>
+				<Slice orientation="row" id="20">
+					<Blocks>1,3,1,6,1,2,2</Blocks>
+				</Slice>
+				<Slice orientation="row" id="21">
+					<Blocks>1,1,1,2,6,2,2,3</Blocks>
+				</Slice>
+				<Slice orientation="row" id="22">
+					<Blocks>1,2,1,2,1,5,2,3,1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="23">
+					<Blocks>1,1,2,1,1,9,6,1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="24">
+					<Blocks>1,1,6,2,1,7,1,2,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="25">
+					<Blocks>1,3,7,1,3,1,3,2</Blocks>
+				</Slice>
+				<Slice orientation="row" id="26">
+					<Blocks>1,2,5,1,1,1,1,2,3,2</Blocks>
+				</Slice>
+				<Slice orientation="row" id="27">
+					<Blocks>1,2,4,1,1,1,1,2,1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="28">
+					<Blocks>5,2,1,1,1,1,3,2,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="29">
+					<Blocks>1,1,1,1,1,1,3,4,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="30">
+					<Blocks>1,1,1,2,1,1,2,2,1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="31">
+					<Blocks>2,1,1,1,1,2,2,3,1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="32">
+					<Blocks>1,1,1,2,2,1,3,2,1,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="33">
+					<Blocks>1,2,1,1,1,2,3,2,1,2</Blocks>
+				</Slice>
+				<Slice orientation="row" id="34">
+					<Blocks>1,1,2,1,1,1,3,2,3</Blocks>
+				</Slice>
+				<Slice orientation="row" id="35">
+					<Blocks>2,1,1,1,1,1,3,2</Blocks>
+				</Slice>
+				<Slice orientation="row" id="36">
+					<Blocks>1,1,1,1,1,4,2</Blocks>
+				</Slice>
+				<Slice orientation="row" id="37">
+					<Blocks>7,1,5,1,4,2,6</Blocks>
+				</Slice>
+				<Slice orientation="row" id="38">
+					<Blocks>5,1,6,1,3,2,5,1</Blocks>
+				</Slice>
+				<Slice orientation="row" id="39">
+					<Blocks>4,1,2,5,1,1,4,3,3</Blocks>
+				</Slice>
+				<Slice orientation="row" id="40">
+					<Blocks>1,5,1,4,1,1,7</Blocks>
+				</Slice>
+				<Slice orientation="row" id="41">
+					<Blocks>3,2,1,1,1,1,2,2,2,4</Blocks>
+				</Slice>
+				<Slice orientation="row" id="42">
+					<Blocks>5,1,1,3,5,1,1,3,2</Blocks>
+				</Slice>
+				<Slice orientation="row" id="43">
+					<Blocks>2,1,1,2,1,5</Blocks>
+				</Slice>
+				<Slice orientation="row" id="44">
+					<Blocks>2,1,1,1,1,4,1,2</Blocks>
+				</Slice>
+				<Slice orientation="row" id="45">
+					<Blocks>1,1,1,7,5,1,4,2,3</Blocks>
+				</Slice>
+				<Slice orientation="column" id="1">
+					<Blocks>1,10,1,4,2</Blocks>
+				</Slice>
+				<Slice orientation="column" id="2">
+					<Blocks>2,7,1,1,1,2,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="3">
+					<Blocks>1,2,4,1,3,3</Blocks>
+				</Slice>
+				<Slice orientation="column" id="4">
+					<Blocks>1,5,1,7,4,4,2,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="5">
+					<Blocks>1,6,2,3,8,2,3,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="6">
+					<Blocks>8,1,5,5,2,2,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="7">
+					<Blocks>6,2,4,6,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="8">
+					<Blocks>4,1,3,4,2,2</Blocks>
+				</Slice>
+				<Slice orientation="column" id="9">
+					<Blocks>4,1,1,2,10,2,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="10">
+					<Blocks>5,3,2,7,7,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="11">
+					<Blocks>2,1,1,2,2,2,3,4,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="12">
+					<Blocks>2,3,2,2,5,4</Blocks>
+				</Slice>
+				<Slice orientation="column" id="13">
+					<Blocks>1,3,13,6,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="14">
+					<Blocks>3,1,4,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="15">
+					<Blocks>1,4,11,6,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="16">
+					<Blocks>2,1,2,11,3,6,1,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="17">
+					<Blocks>5,3,13,3,2,1,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="18">
+					<Blocks>1,2,1,17,2,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="19">
+					<Blocks>1,3,1,32,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="20">
+					<Blocks>2,3,1,9,3,1,3</Blocks>
+				</Slice>
+				<Slice orientation="column" id="21">
+					<Blocks>3,13,2,1,3,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="22">
+					<Blocks>4,3,4,4,8,2,2</Blocks>
+				</Slice>
+				<Slice orientation="column" id="23">
+					<Blocks>1,1,1,2,13,3,2</Blocks>
+				</Slice>
+				<Slice orientation="column" id="24">
+					<Blocks>2,3,9,6,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="25">
+					<Blocks>1,3,6,1,1,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="26">
+					<Blocks>1,4,2,8,3,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="27">
+					<Blocks>2,1,4,1,9,5,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="28">
+					<Blocks>3,2,4,2,5,4,2,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="29">
+					<Blocks>1,1,2,1,4,5,1,5,5,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="30">
+					<Blocks>1,1,4,3,8,1,5,4,1,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="31">
+					<Blocks>2,2,3,7,2,1,4,4,2</Blocks>
+				</Slice>
+				<Slice orientation="column" id="32">
+					<Blocks>3,2,2,4,1,4,2,2,2,2</Blocks>
+				</Slice>
+				<Slice orientation="column" id="33">
+					<Blocks>3,2,3,4,1,4,1,3,1,3</Blocks>
+				</Slice>
+				<Slice orientation="column" id="34">
+					<Blocks>2,2,3,2,2,2,2,1,1,3,1</Blocks>
+				</Slice>
+				<Slice orientation="column" id="35">
+					<Blocks>1,6,7,4,8,3,3,1</Blocks>
+				</Slice>
+			</Slices>
+		</Definition>
+		<Solution>
+			<Square row="1" column="1"/>
+			<Square row="3" column="3"/>
+			<Square row="3" column="5"/>
+			<Square row="2" column="5"/>
+			<Square row="5" column="15"/>
+		</Solution>
+	</Board>
+</GameDescriptor>

@@ -1,0 +1,30 @@
+
+.title{
+    color: white;
+}
+
+#delete {
+    cursor: pointer;
+}
+
+.EnableBox {
+    width: 25px;
+    margin: 20px 100px;
+    position: relative;
+    background:none;
+    width: auto;
+    height:auto;
+    padding: 0px;
+}
+
+#chosen_select{
+    width: auto;
+}
+
+#locationSelect_chosen {
+    padding-bottom: 5px;
+}
+.searchHr{
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+}
